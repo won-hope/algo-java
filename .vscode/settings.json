@@ -1,0 +1,18 @@
+{
+  "files.encoding": "utf8",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [100],
+
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.scrollback": 10000,
+
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.compile.nullAnalysis.mode": "disabled",
+  "java.format.enabled": true,
+
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true
+}

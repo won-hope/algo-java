@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Java: Compile (Main)",
+      "type": "shell",
+      "command": "javac",
+      "args": ["-encoding", "UTF-8", "-d", "out", "src\\Main.java"],
+      "problemMatcher": ["$javac"],
+      "group": "build"
+    },
+    {
+      "label": "Java: Run (Main) < input.txt",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Get-Content input.txt | java -cp out Main"
+      ],
+      "dependsOn": "Java: Compile (Main)",
+      "group": "test"
+    }
+  ]
+}
