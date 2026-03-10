@@ -1,0 +1,31 @@
+package 백준.BronzeV;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.math.BigInteger;
+import java.util.StringTokenizer;
+
+public class 문제1271 {
+    public static void main(String[] args) throws IOException {
+        // Scanner 대신 속도가 훨씬 빠른 BufferedReader 사용
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        //공백 기준 입력 분리
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        // 결과값을 한 번에 모아서 출력하기 위한 StringBuilder
+        StringBuilder sb = new StringBuilder();
+
+        // --- 여기서부터 알고리즘 코드 작성 ---
+        BigInteger N = new BigInteger(st.nextToken());
+        BigInteger M = new BigInteger(st.nextToken());
+
+        //몫
+        sb.append(N.divide(M)).append("\n");
+        // 나머지
+        sb.append(N.remainder(M));
+        // --- 결과 출력 ---
+        System.out.println(sb.toString());
+    }
+}
