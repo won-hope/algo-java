@@ -3,23 +3,24 @@ package 백준.BronzeV;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        // Scanner 대신 속도가 훨씬 빠른 BufferedReader 사용
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
 
-        // 공백을 기준으로 문자열을 자를 때 사용하는 StringTokenizer
-        // StringTokenizer st = new StringTokenizer(br.readLine());
+        for (int i = 1; i <= N; i++) {
 
-        // 결과값을 한 번에 모아서 출력하기 위한 StringBuilder
-        StringBuilder sb = new StringBuilder();
+            for (int j = 0; j < N - i; j++) {
+                System.out.print(" ");
+            }
 
-        // --- 여기서부터 알고리즘 코드 작성 ---
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
 
-
-        // --- 결과 출력 ---
-        System.out.println(sb.toString());
+            System.out.println();
+        }
     }
-}
+    }
