@@ -1,4 +1,4 @@
-package 백준.BronzeV;
+package 백준.Bronze;
 
 import java.io.BufferedReader;
 import java.io.IOException;
