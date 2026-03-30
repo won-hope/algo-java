@@ -1,0 +1,21 @@
+{
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.tabCompletion": "on",
+    "editor.wordBasedSuggestions": false,
+    "java.completion.enabled": true,
+    "java.completion.favoriteStaticMembers": [
+        "org.junit.Assert.*",
+        "java.util.Objects.*"
+    ],
+    "java.completion.importOrder": [
+        "java",
+        "javax",
+        "org",
+        "com"
+    ]
+}
